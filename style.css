@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('https://img.freepik.com/fotos-gratis/nuvem-densa-entre-neblina-roxa_23-2148102048.jpg?w=740&t=st=1709823490~exp=1709824090~hmac=23028a1c96dc60b331ca37cf4dda9be39ab3e5b4d1e63741c043a8039758aeb2');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+    /* Adicione um pseudo-elemento ::before para criar uma camada escura */
+    &::before {
+        content: "escuro";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Ajuste a opacidade conforme necessário */
+    }
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.menu a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+}
+
+.menu a:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid brown;
+    transition: 0.4s linear;
+}
+
+.menu a:hover:before {
+    width: 90%;
+}
+
+.register a {
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: brown;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.register a:hover {
+    background: transparent;
+    border: 1px solid brown;
+}
+
+.h-text {
+    max-width: 650px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    animation: 4s ease-in-out 0s 1 animating-multiple-properties none repeat;
+}
+
+@keyframes animating-multiple-properties {
+    from {
+        color: white;
+        filter: brightness(100%);
+    }
+
+    75% {
+        color: blueviolet;
+        filter: brightness(50%);
+    }
+
+    to {
+        color: white;
+        filter: brightness(100%);
+    }
+}
+
+.h-text span {
+    letter-spacing: 5px;
+}
+
+.h-text h1 {
+    letter-spacing: 2px;
+    font-size: 3.5em;
+    color: white;
+    animation-duration: 4s;
+    animation-name: h1;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.h-text h1:hover {
+    letter-spacing: 2px;
+    font-size: 3.5em;
+    color: white;
+    animation-duration: 4s;
+    animation-name: h1hover;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes h1 {
+    from {
+        color: white;
+        filter: brightness(100%);
+    }
+
+    75% {
+        color: blueviolet;
+        filter: brightness(50%);
+    }
+
+    to {
+        color: white;
+        filter: brightness(100%);
+    }
+}
+
+.h-text a {
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 8px;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+
+.h-text a:hover {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    scroll-padding-top: 60px;
+    scroll-padding-bottom: 60px;
+    scroll-margin-top: 60px;
+    scroll-margin-bottom: 60px;
+}
+
+
+form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+form legend {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+
+form legend:hover{
+    opacity: 0.3;
+    scale: 1.05;
+     transition: easeinout 0.5s;
+}
+
+form select {
+
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: 0.4s;
+    outline: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    initial-letter-align: center;
+
+
+}
+
+form select:hover {
+    scale: 1.05;
+
+}
+
+.cardcontent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    initial-letter-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.containermap{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 1000px rgba(37, 23, 48, 0.5);
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+    align-content: center;
+}
+.mapas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 15px;
+  
+}

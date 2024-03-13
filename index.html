@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Go-Trip
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Hill stations</a>
+                <a href="#">Best offer's</a>
+                <a href="#">Our Sites</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <span>Welcome To </span>
+            <h1>International Taste</h1>
+            <br>
+            <a href="#" class="btn">Find our nearest store</a>
+        </section>
+    </header>
+
+</div>
+<card-content id="meuCard">
+  <!-- Adicione um ID à sua div containermap -->
+<div class="containermap" id="containermap-state1">
+    <!-- Conteúdo para State1 -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.908078591385!2d-48.62467510000001!3d-27.001457400000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b66c7bb0cd63%3A0xc11c5d6724578edf!2sR.%203300%2C%20350%20-%20Centro%2C%20Balne%C3%A1rio%20Cambori%C3%BA%20-%20SC%2C%2088330-272!5e0!3m2!1spt-BR!2sbr!4v1710108556140!5m2!1spt-BR!2sbr" width=" 750 " height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="containermap" id="containermap-state2" style="display: none;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.769124557497!2d-48.656462999999995!3d-26.910821399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cc0afffc7681%3A0x53515af341f93f42!2sR.%20Cambori%C3%BA%2C%20333%20-%20Centro%2C%20Itaja%C3%AD%20-%20SC%2C%2088301-450!5e0!3m2!1spt-BR!2sbr!4v1710108588754!5m2!1spt-BR!2sbr" width=" 750 " height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- ... -->
+</div>
+
+<div class="containermap" id="containermap-state3" style="display: none;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.7093911563784!2d-48.668044099999996!3d-26.9127166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cc77537d3109%3A0x3543db444ed03f87!2sR.%20Bernardino%20Jo%C3%A3o%20Vit%C3%B3rino%20-%20Centro%2C%20Itaja%C3%AD%20-%20SC%2C%2088303-090!5e0!3m2!1spt-BR!2sbr!4v1710159598130!5m2!1spt-BR!2sbr" width=" 750 " height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- ... -->
+</div>
+
+<div class="containermap" id="containermap-state4" style="display: none;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.7093911563784!2d-48.668044099999996!3d-26.9127166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cc77537d3109%3A0x3543db444ed03f87!2sR.%20Bernardino%20Jo%C3%A3o%20Vit%C3%B3rino%20-%20Centro%2C%20Itaja%C3%AD%20-%20SC%2C%2088303-090!5e0!3m2!1spt-BR!2sbr!4v1710159598130!5m2!1spt-BR!2sbr" width=" 750 " height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- ... -->
+</div>
+
+<!-- ... Adicione outras divs containermap para outros estados ... -->
+
+
+</card-content>
+<div class="m" >
+   
+    <section class = "mapas">
+        <form>
+            <fieldset>
+              <legend> Select Your State </legend>
+              <select name="1A" id="stateselect" autocomplete="off" >
+                <option>Select your State</option>
+                <option  value="state1"> State1</option>
+                <option  value="state2"> State2</option>
+                <option value="state3"> State3</option>
+                <option value="state4"> State4</option>
+              </select>
+            </fieldset>
+          </form>
+    </section>
+</div>
+</body>
+
+</html>
